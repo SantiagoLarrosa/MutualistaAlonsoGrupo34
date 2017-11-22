@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF=8" lang="spanish">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title> Contacto </title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <header class="d1"> 
+        <img src="../images/logo.png" width="50%" height="170x">
+        <a class="a" href="../index.html"> Inicio </a>
+        <a class="a" href="nosotros.html" > Nosotros </a>
+        <a class="a" href="medicos.html"> Reservas </a>
+        <a class="a" href="novedades.html"> Novedades </a>
+        <a class="a" href="contacto.html"> Contacto </a>
+    </header>
+    <h1> Jose Luis Perez</h1>
+    <h2> Medicina General</h2>
+    <h2>Sede Central, Santa Rosa</h2>
+    <br></br>
+    <h3>Horarios:</h3>
+    <p class="novetexto">
+        Lunes a Viernes de 8:00 a 11:00 y de 13:00 a 16:00
+    </p>
+    <h2>Reservar tu lugar</h2>
+    <p class="novetexto">
+        Reserva tu lugar con tu mail y tu cedula enviando el dias y la hora en la que desee ser atendido por este profesional, si se retrasa media hora, le devolvemos la mitad del monto abonado.
+    </p>
+        
+    <div class="mail">
+        
+        <div class="maildos">
+            <form class="maildos">
+                <br></br>
+                <label class="novetexto" for="name"> Tu Nombre </label>
+                <input type="text" id="name" name="name" value="">
+                <br></br>
+                <label class="novetexto" for="telf"> Tu Correo </label>
+                <input type="text" id="mail" name="mail" value="">
+                <br></br>
+                <label for="test" id="test"> . . . </label>
+                <input type="button" value="CONTACTA" onclick="sendMail();this.blur()">
+            </form>
+        </div>   
+    </div>  
+        
+</body>
+</html>
