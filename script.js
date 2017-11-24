@@ -36,3 +36,22 @@ function sendMail() {
     if (n.length >= 2 && filter.test(m)) { window.location.href = "mailto:" + link; return true; }
     else { t.innerHTML = "Revisa los datos . . ."; setTimeout(function () { t.innerHTML = ". . ." }, 2000); return false; }
   }
+
+
+  function Diagnostico(){
+     
+      
+      var radios = document.getElementsByName('dignostico');
+        if (radios.checked&& radios.value==0)
+       {
+        alert('Tome Ibuprofeno 400, si el dolor no pasa en 6 horas acuda a su medico inmediatamente');
+       }
+        else (radios.checked&& radios.value==1)
+            {
+             alert('Tome Dipirona, si el dolor no pasa en 6 horas acuda a su medico inmediatamente');
+             }
+         if (radios.checked&& radios.value==2)
+             {
+              alert('Aplique gel analgesico en la zona (Rati Salil, entre otros) luego consulte a su medico inmediatamente');
+              }
+            }

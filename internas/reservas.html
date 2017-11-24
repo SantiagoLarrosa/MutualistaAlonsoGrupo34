@@ -6,30 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <title> Reservas </title>
-<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous">
-<script src="../script.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous">
+    <script src="../script.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../images/icono2.png"/>
+    <link rel="shortcut icon" type="image/png" href="../images/icono2.png"/>
 </head>
 <body>
 	<header class="d1"> 
-    <img src="../images/logo.png" width="50%" height="170x">
-    <a class="a" href="../index.html"> Inicio </a>
-    <a class="a" href="nosotros.html" > Nosotros </a>
-    <a class="a" href="reservas.html"> Reservas </a>
-    <a class="a" href="novedades.html"> Novedades </a>
-    <a class="a" href="contacto.html"> Contacto </a>
+        <img src="../images/logo.png" width="50%" height="170x">
+        <a class="a" href="../index.html"> Inicio </a>
+        <a class="a" href="nosotros.html" > Nosotros </a>
+        <a class="a" href="reservas.html"> Reservas </a>
+        <a class="a" href="novedades.html"> Novedades </a>
+        <a class="a" href="contacto.html"> Contacto </a>
 	</header>
-
-<div class="d1">
-    <fieldset class="form-group">
-        <legend> Inicie sesion con su cedula </legend>
-        <br>
-          Usuario:  <input type="number" id="user" required> 
-        </br>    
-        <br>    
-          Contraseña:  <input type="password" id="pasword" required> 
-        </br>
-        <br>
-        <button onclick="login()">Ingresar</button>
-        </br>
+    <br></br>
+    <br></br>
+    <div class="d1">
+        <fieldset class="form-group">
+            <legend> Inicie sesion con su cedula </legend>
+            <br>
+                Usuario:  <input type="number" id="user" required> 
+            </br>    
+            <br>    
+                Contraseña:  <input type="password" id="pasword" required> 
+            </br>
+            <br>
+                <button onclick="login()">Ingresar</button>
+            </br>
     </fieldset>
-</div>
+    <br></br>
+    </div>
+        <p class="novetitulo" >Diagnostico Automatico en el Momento</p>
+        <form>
+            <input id="cabeza" class="novetexto" type="radio" name="diagnostico" value="0" checked>Dolor de Cabeza<br>
+            <input id="abdomen" class="novetexto" type="radio" name="diagnostico" value="1">Dolor Abdominal<br>
+            <input id="extremidad" class="novetexto" type="radio" name="diagnostico" value="2"> Dolor en una Extrmidad <br>
+            <br>
+            <input class="novetexto" type="button" onclick="Diagnostico()" value="Diagnosticar">
+        </form>
+    </div>
+
+
+
+</body>
+</html>

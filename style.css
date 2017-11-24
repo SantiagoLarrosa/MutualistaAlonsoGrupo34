@@ -174,3 +174,12 @@ text-align: center;
 .tr{
   margin-left: 10px
 }
+.autodiag{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: center;
+  margin-left: 40px;
+  text-decoration: none;
+  size: 55px;
+  
+}
